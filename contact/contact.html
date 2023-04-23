@@ -1,0 +1,160 @@
+ <!-- 
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Khuong Minh Hien
+  ID: s3978807
+  Acknowledgement: https://cdnjs.com/libraries/font-awesome, https://www.nettruyento.com/, https://uiverse.io/
+ -->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>KHUONG BOOKSTORE</title>
+ 
+     <!--font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!--custom css file link -->
+     <link rel="stylesheet" href="style.css">
+ 
+     
+ 
+     
+ </head>
+ <body>
+     
+  <!--header section starts-->
+ 
+  <header>
+ 
+    <a href="#" class="logo">BOOK<span>.</span></a>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="webtoons.html">webtoons</a>
+        <a href="manga.html">manga</a>
+        
+    </nav>
+ 
+
+  </header>
+  <!--header section ends-->
+
+  <!--contact section starts-->
+
+  <section class="contact" id=""contact>
+    <h1 class="heading"><span> contact </span> us </h1>
+    <div class="row">
+        <form action="">
+            <div class="contact-purpose">
+                <label for="contact-purpose">Contact purpose:</label>
+                <select name="contact-purpose" id="contact-purpose">
+                  <option value="sell-book">I want to sell books</option>
+                  <option value="buy-book">I want to buy books</option>
+                </select>
+              </div>
+
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+
+            <div class="contact-pref">
+                <label for="checkbox-container">Contact preference:</label>
+                <div class="checkbox-container" id="checkbox-container">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="by-email"
+                      name="by-email"
+                      value="by-email"
+                    />
+                    <label for="by-email">By email</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="by-phone"
+                      name="by-phone"
+                      value="by-phone"
+                    />
+                    <label for="by-phone">By phone</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="newsletter">
+                <label for="radio-container">Receive weekly newsletter:</label>
+                <div class="radio-container" id="radio-container">
+                  <div>
+                    <input checked type="radio" id="yes" name="choices" value="yes" />
+                    <label for="yes">Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="no" name="choices" value="no" />
+                    <label for="no">No</label>
+                  </div>
+                </div>
+              </div>
+    
+            <textarea name="" class="box" placeholder="note" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="submit" class="btn">
+            <input type="submit" value="reset" class="btn">
+        </form>
+    </div>
+
+           
+  </section>
+
+
+
+  <!--contact section ends-->
+
+  <!--footer section starts-->
+
+<section class="footer">
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="#">about</a>
+        </li>
+
+        <li>
+            <a href="#">privacy policy</a>
+        </li>
+
+        <li>
+            <a href="#">terms</a>
+        </li>
+
+        <li>
+            <a href="#">copyright</a>
+        </li>
+
+        <li>
+            <a href="contact.html">contact us</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        Designed & Build by HIEN 
+    </p>
+
+
+</section>
+
+<!--footer section ends-->
+
+</head>
+<body>

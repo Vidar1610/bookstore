@@ -1,0 +1,166 @@
+/* book detail design starts */
+main {
+    background-color: #f1f2f6;
+}
+
+/* breadcrumbs design */
+.bread-crumbs {
+    padding: 25px;
+
+}
+
+.bread-crumbs p {
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* details */
+.detail{
+    position: relative;
+    display: flex;
+    margin: 100px auto;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid transparent;
+}
+
+.detail .main-image{
+    margin: 20px;
+    width: auto;
+}
+
+.detail .sub-image{
+    width: 90%;
+}
+
+.detail .sub-image{
+    border: 10px solid transparent;
+    height: 30%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: solid 2px black;
+}
+  .detail .sub-image img{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    position: relative;
+}
+
+.detail .price_card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.detail .price_card h1{
+    font-size: 50px;
+    color: #e75516;
+}
+  .detail .price_card h2{
+    margin-top: 20px;
+    font-size: 30px;
+    color: darkblue;
+}
+  .detail .price_card .btn{
+    margin: 10%;
+    text-align: center;
+}
+
+/* button */
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+.video{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 960px){
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail .main-image{
+    display: flex;
+    justify-content: center;
+}
+
+.detail .sub-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.detail .sub-image img{
+    width: 25%;
+}
+
+.price_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_card h1{
+    text-align: center;
+}
+}
